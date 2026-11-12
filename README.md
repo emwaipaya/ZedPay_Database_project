@@ -31,7 +31,8 @@ This database  stores, organizes, and processes financial records, user identiti
 | adress_id | INT | False | False | 0002, 0024|
 | user_tpin | INT | True | False | 2022005678, 7665989012 |
 | user_type | VARCHAR | False | False | Merchant, Domestic, Agent |
-|activity_status| VARCHAR | False | False | Active , Inactive |
+|activity_status| VARCHAR | False | False | Active , Inactive |\
+| contact_id | INT | False | False | 9890, 325476|
 
 ### Merchant Table Structure
 | Field name | Type | isUnique | isNull | Example values |
@@ -39,7 +40,8 @@ This database  stores, organizes, and processes financial records, user identiti
 | merchant_id | INT| TRUE |False| 1287,1290|
 | user_id | INT | False | True | 54767, 76987|
 | business_name | VARCHAR | False | False | FrontMark Trading, ShopRight|
-| business_tpin | INT | True | False | 3276549865, 698438765 |  
+| business_tpin | INT | True | False | 3276549865, 698438765 |
+| contact_id | INT | False | False | 9890, 325476|
 
 ### Transaction Table Structure
 
@@ -47,10 +49,22 @@ This database  stores, organizes, and processes financial records, user identiti
 |------------|------|----------|------------|----------------|
 | transation_id| INT | True | False | 8982, 2343|
 | currency | VARCHAR | False | False | USD, ZMW |
-| from_account_id | INT | False | False | 9023, 3245 |
-| to_account_id | INT | False | False | 9023, 3245 | 
+| from_id | INT | False | False | 9023, 3245 |
+| to_id | INT | False | False | 9023, 3245 |
 | amount | DECIMAL | False | False | 2000, 10000 |
 | transaction_status | VARCHAR | False | False | Pending, Failed, completed |
 | created_at | DATETIME | False | False | 2026-11-12 14:30:00.000 |
 
+### Agent Table Structure
 
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
+| agent_id | INT | True | False | 9876, 1254 |
+| user_id | INT | False | True | 8723, 2439|
+|location_id| INT | False | False | 9823, 2345|
+| contact_id | INT | False | False | 9890, 325476|
+
+
+
+
+|-|-|-|-|-|
