@@ -3,5 +3,5 @@ A database for a fictional fintech Banking app called ZedPay that expects to hav
 
 ---
 
-# Database Overview
+## Database Overview
 This database  stores, organizes, and processes financial records, user identities, and real-time transactions for the ZedPay mobile Banking app.
