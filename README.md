@@ -37,6 +37,20 @@ This database  stores, organizes, and processes financial records, user identiti
 | Field name | Type | isUnique | isNull | Example values |
 |------------|------|----------|------------|----------------|
 | merchant_id | INT| TRUE |False| 1287,1290|
-| user_id | INT | False | True | 54767' 76987|
-|business_name | VARCHAR | False | False | FrontMark Trading, ShopRight|
-|business_tpin| INT | True | False | 3276549865, 698438765 |  
+| user_id | INT | False | True | 54767, 76987|
+| business_name | VARCHAR | False | False | FrontMark Trading, ShopRight|
+| business_tpin | INT | True | False | 3276549865, 698438765 |  
+
+### Transaction Table Structure
+
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
+| transation_id| INT | True | False | 8982, 2343|
+| currency | VARCHAR | False | False | USD, ZMW |
+| from_account_id | INT | False | False | 9023, 3245 |
+| to_account_id | INT | False | False | 9023, 3245 | 
+| amount | DECIMAL | False | False | 2000, 10000 |
+| transaction_status | VARCHAR | False | False | Pending, Failed, completed |
+| created_at | DATETIME | False | False | 2026-11-12 14:30:00.000 |
+
+
