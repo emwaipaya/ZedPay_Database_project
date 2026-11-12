@@ -17,3 +17,22 @@ This database  stores, organizes, and processes financial records, user identiti
 | Transactions | Records user transactions |
 | Agents | Stores agent detailes |
 | Wallets | Stores cutomer wallet balances |
+| Contact_details | Stores user | contact deatils |
+|Location| Stores user locations 
+
+---
+
+### Users Table Structure 
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
+| user_id | INT | True | False| 0001,0002,
+| first_name | VARCHAR | False | False | Ben, Emmanuel|
+| last_name | VARCHAR | False | False | Mwape, Nachimata|
+| adress_id | INT | False | False | 0002, 0024|
+| user_tpin | INT | True | False | 2022005678, 7665989012 |
+| user_type | VARCHAR | False | False | Merchant, Domestic, Agent |
+|activity_status| VARCHAR | False | False | Active , Inactive |
+
+### Merchant Table Structure
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
