@@ -36,3 +36,7 @@ This database  stores, organizes, and processes financial records, user identiti
 ### Merchant Table Structure
 | Field name | Type | isUnique | isNull | Example values |
 |------------|------|----------|------------|----------------|
+| merchant_id | INT| TRUE |False| 1287,1290|
+| user_id | INT | False | True | 54767' 76987|
+|business_name | VARCHAR | False | False | FrontMark Trading, ShopRight|
+|business_tpin| INT | True | False | 3276549865, 698438765 |  
