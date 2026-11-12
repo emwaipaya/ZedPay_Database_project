@@ -51,11 +51,12 @@ This database  stores, organizes, and processes financial records, user identiti
 | currency | VARCHAR | False | False | USD, ZMW |
 | from_id | INT | False | False | 9023, 3245 |
 | to_id | INT | False | False | 9023, 3245 |
+| trans_description | VARCHAR | False | True | Food, rent |
 | amount | DECIMAL | False | False | 2000, 10000 |
 | transaction_status | VARCHAR | False | False | Pending, Failed, completed |
 | created_at | DATETIME | False | False | 2026-11-12 14:30:00.000 |
 
-### Agent Table Structure
+### Agents Table Structure
 
 | Field name | Type | isUnique | isNull | Example values |
 |------------|------|----------|------------|----------------|
@@ -64,7 +65,16 @@ This database  stores, organizes, and processes financial records, user identiti
 |location_id| INT | False | False | 9823, 2345|
 | contact_id | INT | False | False | 9890, 325476|
 
+### Wallets Table Structure
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
+| wallet_id | INT | True | False | 9034, 5465 |
+| user_id | INT | False | False | 7632, 23643 |
+| balance | DECIMAL | False | False | 7.00, 10,100.50|
+| last_update | DATETIME | False | False | 2026-11-12 14:30:00.000 |
+| created_at | DATETIME | False | False | 2026-11-12 14:30:00.000 |
 
+### Wallet Table Structure
 
 
 |-|-|-|-|-|
