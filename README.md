@@ -9,7 +9,6 @@ This database  stores, organizes, and processes financial records, user identiti
 ---
 
 ## Table Documentation
-
 | Table Name | Description |
 |-----------|-----------|
 | Users | Stores registered cutomer accounts|
@@ -44,7 +43,6 @@ This database  stores, organizes, and processes financial records, user identiti
 | contact_id | INT | False | False | 9890, 325476|
 
 ### Transaction Table Structure
-
 | Field name | Type | isUnique | isNull | Example values |
 |------------|------|----------|------------|----------------|
 | transation_id| INT | True | False | 8982, 2343|
@@ -57,7 +55,6 @@ This database  stores, organizes, and processes financial records, user identiti
 | created_at | DATETIME | False | False | 2026-11-12 14:30:00.000 |
 
 ### Agents Table Structure
-
 | Field name | Type | isUnique | isNull | Example values |
 |------------|------|----------|------------|----------------|
 | agent_id | INT | True | False | 9876, 1254 |
@@ -74,7 +71,24 @@ This database  stores, organizes, and processes financial records, user identiti
 | last_update | DATETIME | False | False | 2026-11-12 14:30:00.000 |
 | created_at | DATETIME | False | False | 2026-11-12 14:30:00.000 |
 
-### Wallet Table Structure
+### Contact_details Table Structure
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
+| contact_id | INT | True | False | 12034, 3409 |
+| number | VARCHAR | True | False | 0960097894, 0779540223|
+| email | VARCHAR | True | False | example@provider |
+
+### Location Table Structure
+| Field name | Type | isUnique | isNull | Example values |
+|------------|------|----------|------------|----------------|
+| location_id | INT | True | False | 903287, 2349854|
+| province | VARCHAR | False | False | Copperbelt, Lusaka |
+| city | VARCHAR | False | False | Kitwe, Kasama|
+| region | VARCHAR | False |True | Chachacha, matero|
+| home_adress | VARCHAR | False | False |(cc3, lunda), (388, first Street) 
+
+
+
 
 
 |-|-|-|-|-|
